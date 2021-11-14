@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-   
+    <meta charset="utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
@@ -13,16 +13,53 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+
+   
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-   <link href="css/footer.css" rel="stylesheet" />
+
+    <style>
+        .counter {
+            background-color: #eaecf0;
+            text-align: center;
+        }
+
+        .employees, .customer, .design, .order {
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+
+        .counter-count {
+            font-size: 18px;
+            background-color: #00b3e7;
+            border-radius: 50%;
+            position: relative;
+            color: #ffffff;
+            text-align: center;
+            line-height: 92px;
+            width: 92px;
+            height: 92px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            display: inline-block;
+        }
+
+        .employee-p, .customer-p, .order-p, .design-p {
+            font-size: 24px;
+            color: #000000;
+            line-height: 34px;
+        }
+    </style>
+
 </head>
 <body id="page-top">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" target="_blank" href="assets/img/MyProfile.jpg">
             <span class="d-block d-lg-none">
-                VISHAL KUMAR
+                VISHAL KUMAR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" style="width: 60px; height: 60px" src="assets/img/MyProfile.jpg" alt="..." />
             </span>
 
@@ -34,67 +71,70 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><i class="fas fa-user-graduate"></i>&nbsp;&nbsp;Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-cog fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;&nbsp;Projects</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#personalDetails"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Pesonal Details</a></li>
-
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#personalDetails">Pesonal Details</a></li>
+                
             </ul>
 
         </div>
     </nav>
-   
+    <!-- Page Content-->
     <div class="container-fluid p-0">
-
         <!-- About-->
-        <section class="resume-section" id="about" style="margin-top:-10%">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="employees">
+                <p class="counter-count"><span id="count"></span></p>
+                <p class="employee-p">Employee</p>
+            </div>
+        </div>
 
+        <section class="resume-section" id="about">
             <div class="resume-section-content">
-
                 <h1 class="mb-0">
                     Vishal
 
                     <span class="text-success">Kumar</span>
                 </h1>
                 <div class="subheading mb-5">
-                    <i class="fa fa-home" aria-hidden="true"></i> H. No. - B-564 Gautam Puri PH-II Badarpur New Delhi 110044 ·<br />
-                    <i class="fa fa-phone-square text-success" aria-hidden="true"></i> <a class="text-dark" href="tel:+91783-8125-747">(+91) 783-8125-474 </a><br />
-                    <a class="text-dark" href="mailto:vishal786kumar001@gmail.com"><i class="fa fa-envelope text-success" aria-hidden="true"></i> vishal786kumar001@gmail.com</a>
+                    H. No. - B-564 Gautam Puri PH-II Badarpur New Delhi 110044 ·<br />
+                    <a class="text-dark" href="tel:+91783-8125-747">(+91) 783-8125-474 </a>&nbsp;&nbsp;&nbsp;
+                    <a class="text-dark" href="mailto:vishal786kumar001@gmail.com">vishal786kumar001@gmail.com</a>
                 </div>
                 <p class="lead mb-5">A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I can use my skills to the advantage of the company while having the scope to develop my own skills.</p>
                 <!--<%--<div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-                </div>--%>-->
+                <a class="social-icon" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+            </div>--%>-->
             </div>
         </section>
         <hr class="m-0" />
         <!-- Experience-->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
-                <h2 class="mb-5"><i class="fa fa-history text-danger" aria-hidden="true"></i> Experience</h2>
+                <h2 class="mb-5">Experience</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Software Developer</h3>
-                        <div class="subheading mb-3"><i class="fa fa-building text-success" aria-hidden="true"></i> Comm-IT India PVT. LTD.</div>
+                        <div class="subheading mb-3">Comm-IT India PVT. LTD.</div>
 
-                        <p>Working As An Asp.Net Developer In Comm-IT India PVT. LTD. From 2019 To Till Date. And Corrently Working On <span class="text-primary"><strong> HRMS</strong></span> And <span class="text-primary"><strong> Organization</strong></span> Projects </p>
-                        <div class="subheading mb-3"><i class="fa fa-arrow-circle-right text-success" aria-hidden="true"></i>&nbsp;&nbsp;Role : ASP.NET Developer</div>
+                        <p>Working As An Asp.Net Developer In Comm-IT India PVT. LTD. From 2019 To Till Date. And Corrently Working On <span class="text-primary">HRMS</span> And <span class="text-primary">Organization</span> Projects </p>
+                        <div class="subheading mb-3">Role : ASP.NET Developer</div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp; <strong>December 2019 - Present</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">December 2019 - Present</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Software Developer</h3>
-                        <div class="subheading mb-3"><i class="fa fa-building text-success" aria-hidden="true"></i>Drishti Technology And Services(DTS Soft India)</div>
+                        <div class="subheading mb-3">Drishti Technology And Services(DTS Soft India)</div>
                         <p>Working As An Asp.Net Developer In Drishti Technology And Services(DTS Soft India) From April 2019 To December 2019. </p>
-                        <div class="subheading mb-3"><i class="fa fa-arrow-circle-right text-success" aria-hidden="true"></i>&nbsp;&nbsp;Role : ASP.NET Developer</div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;<strong>April 2019 - December 2019</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">April 2019 - December 2019</span></div>
                 </div>
 
             </div>
@@ -103,55 +143,55 @@
         <!-- Education-->
         <section class="resume-section" id="education">
             <div class="resume-section-content">
-                <h2 class="mb-5"><i class="fa fa-graduation-cap text-danger" aria-hidden="true"></i>Education</h2>
+                <h2 class="mb-5">Education</h2>
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><i class="fa fa-building text-success" aria-hidden="true"></i>&nbsp;&nbsp;National Small Industries Corporation(NSIC)</h3>
+                        <h3 class="mb-0">National Small Industries Corporation(NSIC)</h3>
                         <div class="subheading mb-3">Advance Diploma In Software Technology</div>
-                        <p><i class="fa fa-star text-info" aria-hidden="true"></i>&nbsp;&nbsp;Grade: B1</p>
+                        <p>Grade: B1</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;<strong>February 2018 - February 2019</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">February 2018 - February 2019</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><i class="fa fa-building text-success" aria-hidden="true"></i>&nbsp;&nbsp;National Small Industries Corporation(NSIC)</h3>
+                        <h3 class="mb-0">National Small Industries Corporation(NSIC)</h3>
                         <div class="subheading mb-3">NIELIT "O" Level</div>
-                        <p><i class="fa fa-star text-info" aria-hidden="true"></i>&nbsp;&nbsp;Grade: B2</p>
+                        <p>Grade: B2</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;<strong> February 2017 - February 2018</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">February 2017 - February 2018</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><i class="fa fa-building text-success" aria-hidden="true"></i>&nbsp;&nbsp;Delhi University</h3>
+                        <h3 class="mb-0">Delhi University</h3>
                         <div class="subheading mb-3">Bachelor Of Arts (B.A. Programme)</div>
-                        <p><i class="fa fa-star text-info" aria-hidden="true"></i>&nbsp;&nbsp;Division: III</p>
+                        <p>Division: III</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;<strong>July 2014 - June 2018</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">July 2014 - June 2018</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><i class="fa fa-building text-success" aria-hidden="true"></i>&nbsp;&nbsp;Govt. Boys. Sr. Sec. School No. 3</h3>
+                        <h3 class="mb-0">Govt. Boys. Sr. Sec. School No. 3</h3>
                         <div class="subheading mb-3">
                             12<sup> th</sup>
                             <br />
                             Central Board Of Secondary Education(CBSE)
                         </div>
-                        <p><i class="fa fa-star text-info" aria-hidden="true"></i>&nbsp;&nbsp;Result: Pass</p>
+                        <p>Result: Pass</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;<strong>May 2014</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">May 2014</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0"><i class="fa fa-building text-success" aria-hidden="true"></i>&nbsp;&nbsp;Govt. Boys. Sr. Sec. School No. 3</h3>
+                        <h3 class="mb-0">Govt. Boys. Sr. Sec. School No. 3</h3>
                         <div class="subheading mb-3">
                             10<sup> th</sup>
                             <br />
                             Central Board Of Secondary Education(CBSE)
                         </div>
-                        <p><i class="fa fa-star text-info" aria-hidden="true"></i>&nbsp;&nbsp;Result: Pass</p>
+                        <p>Result: Pass</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-success"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp;&nbsp;<strong>May 2012</strong></span></div>
+                    <div class="flex-shrink-0"><span class="text-success">May 2012</span></div>
                 </div>
             </div>
         </section>
@@ -159,7 +199,7 @@
         <!-- Skills-->
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
-                <h2 class="mb-5"><i class="fa fa-cog fa-spin text-danger" aria-hidden="true"></i>&nbsp;Skills</h2>
+                <h2 class="mb-5">Skills</h2>
                 <div class="subheading mb-3">Programming Languages & Tools</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">.Net</li>
@@ -181,7 +221,7 @@
         <!-- Interests-->
         <section class="resume-section" id="projects">
             <div class="resume-section-content">
-                <h2 class="mb-5"><i class="fa fa-trophy text-danger" aria-hidden="true"></i>&nbsp;Projects</h2>
+                <h2 class="mb-5">Projects</h2>
                 <ul class="fa-ul mb-12">
 
                     <li>
@@ -198,7 +238,7 @@
                     <li>
                         <h3 class="mb-0"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Sales CRM</h3>
                         <p>
-                            Manage the compelete sales life-cycle of your customer with Sale CRM, Cloud Telephony.
+                            Manage the compelete sales life-cycle of your customer with Sale CRM, Cloud Telephony. <br />
                             E-mail, SMS, Marketing Autometion, Helpdesk all from one place.
                         </p>
                         <div class="flex-shrink-0"><span class="text-success"><strong> Team Size - 2</strong> </span></div><br />
@@ -218,7 +258,7 @@
         <!-- Awards-->
         <section class="resume-section" id="personalDetails">
             <div class="resume-section-content">
-                <h2 class="mb-5"><i class="fa fa-user text-danger" aria-hidden="true"></i>&nbsp;Personal Details</h2>
+                <h2 class="mb-5">Personal Details</h2>
 
                 <table class="table table-hover">
 
@@ -276,23 +316,37 @@
             </div>
         </section>
     </div>
+    <script>
+        console.log('Start');
 
-    <footer class="footer-section">
+        var n = localStorage.getItem('counter');
+        if (n === null) {
+            n = 0;
+        } else {
+            n++;
+        }
+        console.log(n);
+        localStorage.setItem("counter", n);
+        document.getElementById("count").innerHTML = n;
+        console.log('End');
+    </script>
+    <script>
+        $('.counter-count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 5000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
 
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2021, All Right Reserved <a href="https://thevishalkumar.github.io/">Vishal Kumar</a></p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
